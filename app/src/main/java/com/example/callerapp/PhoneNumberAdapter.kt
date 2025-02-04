@@ -9,13 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 class PhoneNumberAdapter(private val contacts: List<Contact>) : RecyclerView.Adapter<PhoneNumberAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val nameTextView: TextView = view.findViewById(android.R.id.text1)
-        val phoneNumberTextView: TextView = view.findViewById(android.R.id.text2)
+        val nameTextView:TextView=view.findViewById(R.id.textViewName)
+        val phoneNumberTextView:TextView=view.findViewById(R.id.textViewPhoneNumber)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_2, parent, false)
+        val view=LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_contact,parent,false)
         return ViewHolder(view)
     }
 

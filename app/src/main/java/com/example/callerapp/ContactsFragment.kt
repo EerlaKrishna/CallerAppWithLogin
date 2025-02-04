@@ -20,7 +20,9 @@ class ContactsFragment : Fragment() {
         Contact("Tulasi", "9999999999"),
         Contact("Madhu", "3333333333"),
         Contact("Bhanu", "3333333333"),
-        Contact("NagaGanesh", "3333333333")
+        Contact("NagaGanesh", "3333333333"),
+        Contact("Joga", "3333333333"),
+        Contact("Naga", "3333333333")
 
     )
 
